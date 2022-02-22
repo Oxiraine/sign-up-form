@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="row">
+            <div class="text-column">
+                <h1>Learn to code by watching others</h1>
+                <p>See how experienced developers solve problems in real time. Watching scripted tutorials is great,but understanding how developers think is invaluable.</p>
+            </div>
+            <div class="form-column">
+                <button class="payment-plan" type="button" name="button"><h4 class="white-text">Try it free 7 days<span> then $20/mo. thereafter</span></h4></button>
+                <div class="main-form">
+                    <form class="sign-up" id="form" action="" method="post">
+                        <div class="input-wrap">
+                            <input class="form-input" type="text" id="firstname" onblur="validateFirstName()" placeholder="First Name">
+                            <img class="error-icon" id="ei-1" src="img/icon-error.svg" alt="Error Ocurred">
+                            <span class="error-msg" id="em-1"><em>First name must be specified</em></span>
+                        </div>
+                        <div class="input-wrap">
+                            <input class="form-input" type="text" id="lastname" onblur="validateLastName()"placeholder="Last Name">
+                            <img src="img/icon-error.svg" alt="Error Occurred" id="ei-2" class="error-icon">
+                            <span class="error-msg" id="em-2"><em>Last name must be specified</em></span>
+                        </div>
+                        <div class="input-wrap">
+                            <input class="form-input" id="email" onblur="validateEmail()"type="email" placeholder="Email Address">
+                            <img src="img/icon-error.svg" alt="Error Occured" class="error-icon" id="ei-3">
+                            <span class="error-msg" id="em-3"><em>Looks like this is not an email</em></span>
+                        </div>
+                        <div class="input-wrap">
+                            <input class ="form-input" id="password" onblur="validatePassword()"type="password" placeholder="Password">
+                            <img src="img/icon-error.svg" alt="Error Occurred" class="error-icon" id="ei-4">
+                            <span class="error-msg" id="em-4"><em>Passsword must be specified</em></span>
+                        </div>
+                        <button class="btn" type="button">CLAIM YOUR FREE TRIAL</button>
+                        <p class="terms">By clicking the button, you are agreeing to our <a href="">Terms and Services</a>
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+            </div>
+    
+    <script src="index.js"></script>
+
+</body>
+
+</html>
